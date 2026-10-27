@@ -1,16 +1,9 @@
-# carwashing
+# Cartoon Clean Car (Flutter)
+1. `flutter create .` in this folder (generates android/ios), keep `lib/`, `assets/`, `pubspec.yaml`
+2. `flutter pub get && flutter run`
+3. Android `AndroidManifest.xml`: add `<uses-permission android:name="android.permission.CAMERA"/>` and inside `<queries>`:
+   `<intent><action android:name="android.intent.action.VIEW"/><data android:scheme="https"/></intent>` and `<intent><action android:name="android.intent.action.DIAL"/><data android:scheme="tel"/></intent>`
+4. iOS `Info.plist`: `NSCameraUsageDescription`, and `LSApplicationQueriesSchemes` = `tel`, `https`
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Demo: any email + 4-char password works. Choose "Captain" to enter the captain side (signs in as Ahmed Hassan).
+Structure: core/ (theme, glass widgets, utils) · models/ · state/ (AppState – swap for Firebase) · screens/
