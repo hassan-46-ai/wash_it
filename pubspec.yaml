@@ -1,0 +1,12 @@
+name: car_wash_app
+description: Car wash on-demand service (customer + employee).
+publish_to: none
+version: 1.0.0
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  image_picker: ^1.0.7
+flutter:
+  uses-material-design: true
